@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+
+    <div class="title"><input placeholder="Title Here"></div>
+    <div class="weather"><input placeholder="Weather Here"></div>
+    <div class="name"><input placeholder="Name Here"></div>
+    <br>
+    <!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
+    <div class="custom-select">
+        <select id="date">
+            <option value="0">Yesterday</option>
+            <option value="1">Yesterday</option>
+            <option value="2">Today</option>
+            <option value="3">A week ago</option>
+        </select>
+    </div>
+    <div class="custom-select">
+        <select>
+            <option value="0">Patricia</option>
+            <option value="1">Patricia</option>
+            <option value="2">James</option>
+            <option value="3">Robert</option>
+            <option value="3">Mary</option>
+        </select>
+    </div>
+    <div class="custom-select">
+        <select>
+            <option value="0">went to</option>
+            <option value="1">went to</option>
+            <option value="2">bought</option>
+            <option value="3">saw</option>
+        </select>
+    </div>
+    <div class="custom-select">
+        <select>
+            <option name="grave" value="0">the graveyard</option>
+            <option value="1">the graveyard</option>
+            <option value="2">the restaurant</option>
+            <option value="3">the cafe</option>
+        </select>
+    </div>
+    <div class="custom-select">
+        <select>
+            <option value="0">and</option>
+            <option value="1">and</option>
+            <option value="2">but</option>
+            <option value="3">then</option>
+        </select>
+    </div>
+    <div class="custom-select">
+        <select>
+            <option value="0">she</option>
+            <option value="1">she</option>
+            <option value="2">he</option>
+            <option value="3">they</option>
+        </select>
+    </div>
+    <div class="custom-select">
+        <select>
+            <option value="0">couldn't</option>
+            <option value="1">couldn't</option>
+            <option value="2">didn't</option>
+        </select>
+    </div>
+    <div class="custom-select">
+        <select>
+            <option value="0">have</option>
+            <option value="1">have</option>
+            <option value="2">get</option>
+        </select>
+    </div>
+    <div class="custom-select">
+        <select>
+            <option value="0">vegetables</option>
+            <option value="1">vegetables</option>
+            <option value="2">the contract</option>
+            <option value="2">the menu</option>
+        </select>
+    </div>
+    <div class="custom-select">
+        <select>
+            <option value="0">for the dinner.</option>
+            <option value="1">for the dinner.</option>
+            <option value="2">for the wedding.</option>
+            <option value="2">for the dog.</option>
+        </select>
+    </div>
+    <div class="custom-select">
+        <select>
+            <option value="0">That's why</option>
+            <option value="1">That's why</option>
+            <option value="2">So</option>
+            <option value="2">However</option>
+        </select>
+    </div>
+    <div class="custom-select">
+        <select>
+            <option value="0">She</option>
+            <option value="1">she</option>
+            <option value="2">he</option>
+            <option value="2">they</option>
+        </select>
+    </div>
+    <div class="custom-select">
+        <select>
+            <option value="0">got confused</option>
+            <option value="1">got confused</option>
+            <option value="2">was happy</option>
+            <option value="2">was mad</option>
+        </select>
+    </div>
+    <div class="custom-select">
+        <select>
+            <option value="0">because of</option>
+            <option value="1">because of</option>
+            <option value="2">by</option>
+            <option value="2">thanks to</option>
+        </select>
+    </div>
+    <div class="custom-select">
+        <select>
+            <option value="0">the situation.</option>
+            <option value="1">the situation.</option>
+            <option value="2">a dog.</option>
+            <option value="2">a cat.</option>
+        </select>
+    </div>
+    <div class="custom-select">
+        <select>
+            <option value="0">Suddenly</option>
+            <option value="1">Suddenly</option>
+            <option value="2">Immediately</option>
+            <option value="2">And later</option>
+        </select>
+    </div>
+    <div class="custom-select">
+        <select>
+            <option value="0">a stranger</option>
+            <option value="1">a stranger</option>
+            <option value="2">a friend</option>
+            <option value="2">cockroaches</option>
+        </select>
+    </div>
+    <div class="custom-select">
+        <select>
+            <option value="0">walk to</option>
+            <option value="1">walk to </option>
+            <option value="2">ran to </option>
+            <option value="2">rolled </option>
+        </select>
+    </div>
+    <div class="custom-select">
+        <select>
+            <option value="0">her</option>
+            <option value="1">her</option>
+            <option value="2">him</option>
+            <option value="2">them</option>
+        </select>
+    </div>
+    <div class="custom-select">
+        <select>
+            <option value="0">a bit later</option>
+            <option value="1">a bit later</option>
+            <option value="2">afterwards</option>
+            <option value="2">and then </option>
+        </select>
+    </div>
+    <div class="custom-select">
+        <select>
+            <option value="0">they</option>
+            <option value="1">they</option>
+            <option value="2">he</option>
+            <option value="2">she</option>
+        </select>
+    </div>
+    <div class="custom-select">
+        <select>
+            <option value="0">asked if</option>
+            <option value="1">asked if</option>
+            <option value="2">said that</option>
+        </select>
+    </div>
+    <div class="custom-select">
+        <select>
+            <option value="0">I am</option>
+            <option value="1">I am</option>
+            <option value="2">they are</option>
+            <option value="2">he is</option>
+            <option value="2">she is</option>
+        </select>
+    </div>
+    <div class="custom-select">
+        <select>
+            <option value="0">the King of their empire.</option>
+            <option value="1">the King of their empire.</option>
+            <option value="2">on the dinner menu.</option>
+            <option value="2">sold out.</option>
+        </select>
+    </div>
+
+    <script src="1.js">
+    </script>
+
+</body>
+
+</html>

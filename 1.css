@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'one';
+    src: url("SyneTactile-Regular.ttf");
+    font-weight: 1 999;
+}
+
+*{
+    margin: 0px;
+}
+body {
+    position: absolute;
+
+    /* background: 50% -25% / 45% no-repeat url("Grave.png"); */
+    background-color: #e4e4e4;
+    font-family: 'one';
+    font-size: 4vw;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.title {
+    font-family: 'one';
+    width: 50%;
+    margin: 1vw;
+    margin-left: 25%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    float:inline-start;
+    border-radius: 45px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    background-color: #e4e4e4;
+    color: #e4e4e4;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+.weather {
+    font-family: 'one';
+    width: 30%;
+    margin: 1vw;
+    padding: 0%;
+    display: inline-flex;
+    /* margin-left: 25%; */
+    /* text-align: right;
+    align-items: right; */
+    /* display: inline; */
+    /* float: right; */
+    border-radius: 45px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    background-color: #e4e4e4;
+    color: #e4e4e4;
+    text-shadow: 2px 2px 5px #e4e4e4;
+}
+
+.name {
+    font-family: 'one';
+    width: 30%;
+    margin: 1vw;
+    display: inline-flex;
+    /* margin-left: 25%; */
+    /* text-align: right;
+    align-items: right; */
+    /* display: inline; */
+    float: right;
+    border-radius: 45px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    background-color: #e4e4e4;
+    color: #e4e4e4;
+    text-shadow: 2px 2px 5px #e4e4e4;
+}
+
+::placeholder{
+    font-family: 'one';
+    font-size: 4vw;
+    color: #e4e4e4;
+    text-shadow: 2px 2px 5px #000000;
+    margin: 0px;
+}
+
+input {
+    padding: 0.5vw;
+    font-family: 'one';
+    font-size: 4vw;
+    background-color:rgba(0, 0, 0, 0);
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    /* color: #FFB8EB; */
+    color: #00B075;
+    text-shadow: 2px 2px 5px #000000;
+    /* margin: 10px; */
+}
+
+
+/*the container must be positioned relative:*/
+.custom-select {
+    /* display: inline-block; */
+    display: inline-flex;
+    position: relative;
+    /* width: 32%; */
+    height: 100%;
+    font-family: 'one';
+    padding: 0.3vw;
+    /* font-size: 5rem; */
+    color: black;
+
+}
+
+.custom-select select {
+    display: none;
+    /* width: 20%; */
+    padding: 0;
+    height: 100%;
+    /*hide original SELECT element:*/
+}
+
+.select-selected {
+    border-radius: 45px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5) inset;
+    -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5) inset;
+    -moz-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5) inset;
+    background-color: #00B075;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+    color: #00B075;
+    text-shadow: 2px 2px 5px #000000;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.0) transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+    border-radius: 45px;
+    position: absolute;
+    text-shadow: 2px 2px 5px #000000;
+    background-color: #00B075;
+    box-shadow: 14px 14px 14px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 14px 14px 14px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 14px 14px 14px rgba(0, 0, 0, 0.5);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    /* background-color: rgba(255, 0, 0, 0.1); */
+    color: #00C282;
+    text-shadow: 18px 18px 11px black;
+}
